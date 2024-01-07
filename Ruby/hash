@@ -1,0 +1,3 @@
+//hashのつくりかた
+hash = Hash.new()
+hash = {}
