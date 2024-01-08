@@ -1,0 +1,14 @@
+def medal_ranking
+    coutory_num = gets.to_i 
+    medal_lists = []
+    
+    coutory_num.times{medal_lists << gets.split.map(&:to_i)}
+
+　　#金メダル 銀メダル 銅メダルを全部まとめてソートできる    
+    medal_lists = medal_lists.sort_by { |medal| [medal[0], medal[1], medal[2]] }.reverse
+    
+    medal_lists.each {|list| puts list.join(" ")}         
+        
+end
+
+medal_ranking
