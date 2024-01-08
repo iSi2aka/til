@@ -1,0 +1,18 @@
+Rubyのcountメソッドは、文字列中の特定の文字または文字セットの出現回数を数えるために使用されます。以下は、countメソッドの基本的な使い方です。
+
+str = "Hello, World!"
+
+# 特定の文字の出現回数を数える例
+count_e = str.count("e")
+puts "文字 'e' の出現回数: #{count_e}"
+
+# 文字セットの出現回数を数える例
+count_vowels = str.count("aeiou")
+puts "母音の出現回数: #{count_vowels}"
+
+# 範囲を指定して出現回数を数える例
+count_alphabet = str.count("a-z")
+puts "アルファベットの出現回数: #{count_alphabet}"
+
+
+このコードでは、countメソッドを使用して、文字列中の特定の文字や文字セットの出現回数を数えています。引数として渡す文字列や文字セットは、数えたい対象となる文字を含んでいます。countメソッドは対象の文字がいくつ含まれているかを返します。
