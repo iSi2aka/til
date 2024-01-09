@@ -1,0 +1,20 @@
+def find_alphabet(number)
+  if number <= 0
+    puts "エラー: 正の整数を入力してください。"
+    return nil
+  end
+
+  result = ''
+  while number > 0
+    # 1から26までの範囲に収める
+    current_digit = (number - 1) % 26 + 1
+    result = (current_digit + 64).chr + result
+    number = (number - current_digit) / 26
+  end
+
+  puts "#{number}番目のアルファベットは #{result} です。"
+  return result
+end
+
+# 例: 314番目のアルファベットを求める
+find_alphabet(314)
