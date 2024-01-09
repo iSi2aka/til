@@ -1,0 +1,19 @@
+def calculate_shortest_distance(current_position, target_position)
+  total_positions = 8  # ダイヤルの総位置数
+
+  # 右回りでの距離と左回りでの距離を計算
+  distance_clockwise = (target_position - current_position + total_positions) % total_positions
+  distance_counterclockwise = (current_position - target_position + total_positions) % total_positions
+
+  # 短い方の距離を返す
+  [distance_clockwise, distance_counterclockwise].min
+end
+
+# 現在の位置が1で、目標位置が7の場合
+current_position = 1
+target_position = 7
+
+# 短い方の距離を計算
+shortest_distance = calculate_shortest_distance(current_position, target_position)
+
+puts "右回りまたは左回りでの短い方の距離: #{shortest_distance}"
