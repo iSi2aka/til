@@ -32,6 +32,20 @@ if (num % 15 == 0) {
 }
 
 =========================================================
+## for文
+let count = 1
+for (let i = 1; i <= 100; i += 1) {  //100回処理を繰り返す
+  console.log(`${count}回目の出力`)
+  count +=  1
+}
+
+## forEach文
+fruits = ["apple", "orange", "grape"]
+fruits.forEach( function(item) {
+  console.log(item)　// 配列に格納されている要素の数だけ実行される
+})
+
+=========================================================
 ## 配列
 const list = ["Ruby", "Ruby on Rails", "JavaScript", "HTML", "CSS"]
 console.log(list)
