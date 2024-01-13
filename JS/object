@@ -11,7 +11,11 @@ JavaScriptで予め定義されているメソッドやオブジェクトは全�
 オブジェクト << プロパティ
 window << alert, 
        << console << log,
-       << document << getElementById,
+       << document << getElementById("id名") 
+              　　 << getElementByClassName("class名")
+                   << querySelectorAll("セレクタ名") //セレクタ名 = class名、id名、HTMLタグ
+
+                     ※class名は(".class名")、id名は("#id名")、HTMLタグは("タグ名")と表記する
 
 ## documentオブジェクト
 ブラウザ上で表示された情報(HTML)を操作する事ができるオブジェクト
