@@ -1,0 +1,44 @@
+## funcrion 
+// Rubyで言う "def ~ end" の役割
+
+function sayHello(){
+  console.log("こんにちは！")
+}
+sayHello()   // => "こんにちは！"
+
+====================================================
+## 戻り値
+function calc(num1,num2){
+  num1*num2
+}
+const num1 = 3
+const num2 = 4
+console.log(calc(num1,num2))   // => 12
+
+=====================================================
+## 関数宣言
+function sayHello(){
+  console.log("こんにちは！")
+}
+sayHello()
+
+## 関数式
+sayHello = function(){
+  console.log("こんにちは！")
+}
+
+## 無名関数
+const hello = function(){
+  console.log('hello')
+}
+
+## 即時関数
+(function countNum(num) {
+  console.log(num)
+})(1)
+
+## アロー関数
+const countNum = (num) => {
+  console.log(num)
+}
+countNum(1)
