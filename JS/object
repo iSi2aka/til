@@ -4,3 +4,16 @@ let human = { name: "Jhon", age: 24 }
 console.log(human.name) // => "John"
 human['address'] = 'Tokyo' // => human = { name: "Jhon", age: 24, address: 'Tokyo' }
 human.name = "Yabe" // => human = { name: "Yabe", age: 24, address: 'Tokyo' } 
+
+============================================================
+## windowオブジェクト　//※省略可能
+JavaScriptで予め定義されているメソッドやオブジェクトは全てwindowオブジェクトのプロパティであると言える
+オブジェクト << プロパティ
+window << alert, 
+       << console << log,
+       << document << getElementById,
+
+## documentオブジェクト
+ブラウザ上で表示された情報(HTML)を操作する事ができるオブジェクト
+
+## DOM (document object model)
