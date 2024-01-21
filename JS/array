@@ -1,0 +1,6 @@
+配列のつくりかた
+monster = ["スライム", "ドラゴン", "デーモン"]
+
+for (var index in monster) {       //forループでインデックスを取得する
+  console.log(monster[index]);     //monster配列のそれぞれの配列を表示する
+}
