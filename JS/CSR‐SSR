@@ -39,3 +39,7 @@ Static Site Generation：更新頻度が低いページ
 Server-Side Rendering：更新頻度が高いページ
 　・SNS
 　・チャット
+
+Client-Side Rendering：SEOが関係ないページ
+  ・ユーザーのダッシュボード
+  （非公開のユーザー固有のページ）
