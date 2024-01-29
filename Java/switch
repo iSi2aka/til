@@ -1,0 +1,30 @@
+switch 文は、条件分岐を行うためのJavaの制御構造の一つです。
+switch 文は特定の式の値に基づいて、複数の分岐先の中から一つを実行するために使用されます。
+switch 文の基本構造は以下の通りです。
+
+---------------------------------------------------------------------------------
+# java
+public class SwitchExample {
+    public static void main(String[] args) {
+        int number = 2;
+
+        switch (number) {
+            case 1:
+                System.out.println("数値は1です。");    // 値1の場合の処理
+                break;
+            case 2:
+                System.out.println("数値は2です。");    // 値2の場合の処理
+                break;
+            case 3:
+                System.out.println("数値は3です。");    // …以降その他の場合の処理
+                break;
+            default:
+                System.out.println("1から3の範囲外の数値です。");    // どのケースにも合致しない場合の処理
+        }
+    }
+}
+
+この例では、number の値が2の場合、"数値は2です。"というメッセージが表示されます。
+break がなければ、その後の case および default の処理も続行されるので、各 case の最後には break を追加するのが一般的です。
+
+=====================================================================================
