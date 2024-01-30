@@ -1,8 +1,12 @@
-fruites = [apple, orange, lemon]
+fruits = [apple, orange, lemon]
 
-fruites.forEach(fruite -> System.out.println(fruite));    //1行の変更ならばアローを使用して簡略化可能
+fruits.forEach(fruit -> System.out.println(fruit));    //1行の変更ならばアローを使用して簡略化可能
 
-furites.forEach(fruite -> {
-    String furuiteUpper = fruite.toUpperCase());
-    System.out.println(fruiteUpper);
-});                                                       //2行以上の変更ならば{}を使ってインデントを使って記述する
+furites.forEach(fruit -> {
+    String furuitUpper = fruit.toUpperCase());
+    System.out.println(fruitUpper);
+});                                                     //2行以上の変更ならば{}を使ってインデントを使って記述する
+
+for (String fruit : fruits) {
+    System.out.println(fruit);
+}                                                        //forのみで記述も可能
