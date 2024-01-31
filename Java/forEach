@@ -1,3 +1,4 @@
+# forを使用した繰り返し
 fruits = [apple, orange, lemon]
 
 fruits.forEach(fruit -> System.out.println(fruit));    //1行の変更ならばアローを使用して簡略化可能
@@ -10,3 +11,6 @@ furites.forEach(fruit -> {
 for (String fruit : fruits) {
     System.out.println(fruit);
 }                                                        //forのみで記述も可能
+
+-------------------------------------------------------------------------
+# for と if の組み合わせ
