@@ -14,3 +14,13 @@ for (String fruit : fruits) {
 
 -------------------------------------------------------------------------
 # for と if の組み合わせ
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+numbers.forEach(number -> {                              //配列numbersの各要素を“number”として抽出
+    if (number % 2 == 0) {
+        System.out.println(number + " = 偶数");          //抽出したnumberを偶数か判定する
+    } else {
+        System.out.println(number + " = 奇数");
+    }
+}                                                        //1 = 奇数
+                                                         //2 = 偶数......
