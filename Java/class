@@ -1,0 +1,16 @@
+public class Main {
+  public static void main(String...arg) {
+    Fruit f1 = new Fruit();    //Fruitクラスで "f1" という変数が使えるようになる
+    f1.name = "りんご";    //Mainメソッドの変数 + "." + インスタンス変数 で値を(Mainメソッドの変数に)代入
+    System.out.println(f1.getName());    //すでに "f1" はFruitクラスを使えるため、その中の"getName"メソッドを連れてくることで中身を出力できる
+                                         // => 私が好きな果物はりんご
+
+  }
+}
+
+class Fruit {          //classはアッパーキャメルケースで記述
+  String name;         //← これがインスタンス変数
+  String getName() {
+    return "私が好きな果物は" + neme;　//return は返り値を表す
+  }
+}
