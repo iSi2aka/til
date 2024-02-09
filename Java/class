@@ -1,10 +1,11 @@
 public class Main {
   public static void main(String...arg) {
     Fruit f1 = new Fruit();    //Fruitクラスで "f1" という変数が使えるようになる
-    f1.name = "りんご";    //Mainメソッドの変数 + "." + インスタンス変数 で値を(Mainメソッドの変数に)代入
-    System.out.println(f1.getName());    //すでに "f1" はFruitクラスを使えるため、その中の"getName"メソッドを連れてくることで中身を出力できる
-                                         // => 私が好きな果物はりんご
+    f1.name = "りんご";                  //Mainメソッドの変数 + "." + インスタンス変数 で値を(Mainメソッドの変数に)代入
+    System.out.println(f1.getName());    //すでに "f1" はFruitクラスを使えるため、その中の"getName"メソッドを連れてくることで中身を出力できる　// => 私が好きな果物はりんご
     f1.dislikeFruit();                   // => 私はバナナが嫌いです
+
+    String juice = f1.mixJuice("いちご" + "オレ");
   }
 }
 
@@ -16,5 +17,9 @@ class Fruit {          //classはアッパーキャメルケースで記述
 
   void dislikeFruit() {    //戻り値が必要ないメソッド(System.out系など)は"型宣言"の代わりに"void"と記述する
     System.out.println("私はバナナが嫌いです");    //戻り値は クラスメソッドから -> Mainメソッドへという向き
+  }
+
+  void mixJuice(String x, String y) {      //仮引数を定義する
+    System.out.pritnln(x + y);           　//文字列の足し合わせを行う(もちろん数値でも、単数でも構わない)
   }
 }
