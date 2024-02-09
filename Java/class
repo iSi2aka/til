@@ -4,6 +4,7 @@ public class Main {
     f1.name = "りんご";    //Mainメソッドの変数 + "." + インスタンス変数 で値を(Mainメソッドの変数に)代入
     System.out.println(f1.getName());    //すでに "f1" はFruitクラスを使えるため、その中の"getName"メソッドを連れてくることで中身を出力できる
                                          // => 私が好きな果物はりんご
+    f1.dislikeFruit();                   // => 私はバナナが嫌いです
   }
 }
 
