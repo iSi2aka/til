@@ -13,3 +13,18 @@
 		<input type="submit" value="ログイン">
 	</div>
 </form>
+
+解説
+<h2>ログイン画面</h2>: これは見出しで、これがログインページであることを示しています。
+
+<span th:text="${errorMsg}"></span>: これはエラーメッセージを表示するためのプレースホルダーです。th:text属性は${errorMsg}の値とコンテンツを結びつけるために使用されます。
+
+<form th:action="@{/login}" method="post" th:object="${loginForm}">: これは、ログインリクエストを処理するために"/login"（Springで定義されている）にアクション属性を設定するフォーム要素です。th:object属性はフォームをloginFormオブジェクトにバインドします。
+
+<div><label>ログインID</label><input type="text" th:field="*{loginId}"></div>: このセクションはログインIDのための入力フィールドを作成します。th:field属性はこの入力フィールドをloginFormオブジェクトのloginIdプロパティにバインドします。
+
+<div><label>パスワード</label><input type="password" th:field="*{password}"></div>: ログインIDと同様に、このセクションはパスワードのための入力フィールドを作成し、それをloginFormオブジェクトのpasswordプロパティにバインドします。
+
+<div><input type="submit" value="ログイン"></div>: これはクリックされると、ログインプロセスのためのフォームの送信を開始するサブミットボタンです。
+
+このコードはThymeleafを使用して書かれており、Spring Bootアプリケーションで一般的に使用されるテンプレートエンジンです。これはHTMLファイルに動的なコンテンツとサーバーサイドの処理を統合するのに役立ちます。
